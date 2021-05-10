@@ -1,0 +1,8 @@
+Updated: 9/may/2021 10:40AM 
+TODO:
+1. We need to make check if the api returning error or rate limit exceed, we should return error
+2. Notification thing
+3. Need to make check if pincode right, For example: If pincode wrong, then api surely return error.. we need to handle that error also.
+
+
+Done:
