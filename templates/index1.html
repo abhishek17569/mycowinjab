@@ -1,0 +1,57 @@
+<html>
+    <!-- <head>demo</head> -->
+    <title>demo</title>
+    <title>Data Display</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <body>
+
+    <div class="container">  
+        <h2>Contextual Classes</h2>
+        <p>Contextual classes can be used to color table rows or table cells. The classes that can be used are: .active, .success, .info, .warning, and .danger.</p>  
+        <table class="table">
+            
+            <tbody>
+            {{ centre }}
+            {% set centre = allTodo["centers"] %}
+            {% for li in centre %}
+            <thead>
+                <tr>
+                    <th>Name: {{li['name']}}</th>
+                    <th>Address: {{li['address']}}</th>
+                    <th>Fee: {{li['fee_type']}}</th>
+                </tr>
+            </thead>
+            <!-- <tr>
+                <p>Name: {{li['name']}}</p>
+                <p>Address: {{li['address']}}</p>
+                <p>Fee: {{li['fee_type']}}</p>
+            </tr> -->
+                <tr class="active">
+                    <th>Date</th>
+                    <th>Availability</th>
+                    <th>Minimum Age Limit</th>
+                    <th>Vaccine</th>
+                </tr>
+               <tr > {% for session in li["sessions"] %}
+                   <tr class="info">
+                    <td> {{session['date']}}</td>
+                    <td> {{session['available_capacity']}}</td>
+                    <td>{{session['min_age_limit']}}</td>
+                    <td>{{session['vaccine']}}</td>
+                   </tr>
+                </tr>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+
+            
+            <!-- <p>hello</p> -->
+            </tbody>
+        </table>
+    </div>
+    </body>
+</html>

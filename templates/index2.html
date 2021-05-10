@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>My CowinJab</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!--
+    
+TemplateMo 562 Space Dynamic
+
+https://templatemo.com/tm-562-space-dynamic
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <h4>My <span>CowinJab</span></h4>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#about">About Us</a></li>
+              <li class="scroll-to-section"><a href="#contact">Register</a></li> 
+              <li class="scroll-to-section"><div class="main-red-button"><a href="#contact">Get Notification</a></div></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <h6>Welcome to My Cowin Jab</h6>
+                <h2>Check<em> Vaccine </em>availability &amp; <span>get</span> <spam>Notified</spam> when available.</h2>
+            
+                <form id="search" action="#" method="GET">
+                  <fieldset>
+                    <input type="pincheck" name="pincheck" class="text" id="pincheck" placeholder="Your Pincode..." autocomplete="on" required>
+                  </fieldset>
+                  <fieldset>
+                    <button type="submit" class="main-button">Check</button>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/banner-right-image.png" alt="team meeting">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="contact-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <div class="section-heading">
+            <h2>Add your details for notifications</h2>
+            <p>We'll ping you through Email or Message when vaccines are available for your age group</p>
+            <div class="phone-info">
+              <h4>Cowin Helpline Number: <span><i class="fa fa-phone"></i> <a href="#">+91-11-23978046</a></span></h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <form id="contact" action="" method="post">
+            <div class="row">
+              <div class="col-lg-6">
+                <fieldset>
+                  <input type="name" name="name" id="name" placeholder="Name" autocomplete="off" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <input type="text" name="age" id="age" placeholder="Age" autocomplete="off" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*"  autocomplete="off" placeholder="Your Email" required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <input type="tel" name="phone" id="phone" placeholder="Phone Number" autocomplete="off" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <input type="text" name="pincode" id="pincode" placeholder="Pincode" autocomplete="off" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="district" id="district" autocomplete="off" placeholder="District" required="">
+                </fieldset>
+              </div>
+              
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="main-button ">Submit</button>
+                </fieldset>
+              </div>
+            </div>
+            <div class="contact-dec">
+              <img src="assets/images/contact-decoration.png" alt="">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+  <div class="container">
+    <table class="table">
+  
+      <tbody>
+        {{ centre }}
+        {% set centre = allTodo["centers"] %}
+        {% if centre == -300 %} 
+            <h2>{% print('Already in our Database') %} </h2>
+        {% else %} 
+            {% if centre == -1 %} 
+                <h2>{%print("No Vaccination Centre Available in your Area")%}</h2>
+       
+            {% else %} 
+                 {% for li in centre %}
+                    <thead>
+                        <tr>  
+                          <th>Name: {{li['name']}}</th>
+                          <th>Address: {{li['address']}}</th>
+                          <th>Fee: {{li['fee_type']}}</th>
+                      </tr>
+                    </thead>
+                      <tr class="active">
+                        <th>Date</th>
+                        <th>Availability</th>
+                        <th>Minimum Age Limit</th>
+                        <th>Vaccine</th>
+                      </tr>
+                      <tr> {% for session in li["sessions"] %}
+                      <tr class="info">
+                        <td> {{session['date']}}</td>
+                        <td> {{session['available_capacity']}}</td>
+                        <td>{{session['min_age_limit']}}</td>
+                        <td>{{session['vaccine']}}</td>
+                      </tr>
+                      </tr>
+                  {% endfor %}
+                </tr>
+                {% endfor %}          
+            {% endif %}
+        {% endif %}
+        <!-- <p>hello</p> -->
+      </tbody>
+    </table>
+  </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
+          <p>© Copyright 2021 My Cowin Jab. All Rights Reserved. 
+          
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/templatemo-custom.js"></script>
+
+</body>
+</html>
